@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebService.ASMX", "WebServi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebService.WCF", "WebService.WCF\WebService.WCF.csproj", "{545903B2-C618-4D54-8409-9EA08DE48ED4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebService.ConsoleClient", "WebService.ConsoleClient\WebService.ConsoleClient.csproj", "{37AECD9B-C042-47F5-AC91-C2B360019EDE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{545903B2-C618-4D54-8409-9EA08DE48ED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{545903B2-C618-4D54-8409-9EA08DE48ED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{545903B2-C618-4D54-8409-9EA08DE48ED4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37AECD9B-C042-47F5-AC91-C2B360019EDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37AECD9B-C042-47F5-AC91-C2B360019EDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37AECD9B-C042-47F5-AC91-C2B360019EDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37AECD9B-C042-47F5-AC91-C2B360019EDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
