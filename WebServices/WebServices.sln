@@ -12,6 +12,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebService.WCF", "WebService.WCF\WebService.WCF.csproj", "{545903B2-C618-4D54-8409-9EA08DE48ED4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebService.ConsoleClient", "WebService.ConsoleClient\WebService.ConsoleClient.csproj", "{37AECD9B-C042-47F5-AC91-C2B360019EDE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2130FD95-4267-4D4F-923F-7975127ABCF5} = {2130FD95-4267-4D4F-923F-7975127ABCF5}
+		{545903B2-C618-4D54-8409-9EA08DE48ED4} = {545903B2-C618-4D54-8409-9EA08DE48ED4}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

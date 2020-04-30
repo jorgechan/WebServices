@@ -35,6 +35,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,11 +45,78 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connected Services\LibraryServiceASMX\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\LibraryServiceWCF\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Connected Services\LibraryServiceASMX\LibraryService.wsdl" />
+    <None Include="Connected Services\LibraryServiceASMX\WebService.ConsoleClient.LibraryServiceASMX.GetBooksResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\LibraryServiceASMX\WebService.ConsoleClient.LibraryServiceASMX.Libros.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\LibraryServiceWCF\LibraryService.wsdl" />
+    <None Include="Connected Services\LibraryServiceWCF\LibraryService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\LibraryServiceWCF\LibraryService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\LibraryServiceWCF\LibraryService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\LibraryServiceWCF\WebService.ConsoleClient.LibraryServiceWCF.Libros.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\LibraryServiceASMX\" />
+    <WCFMetadataStorage Include="Connected Services\LibraryServiceWCF\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\LibraryServiceASMX\LibraryService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\LibraryServiceASMX\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\LibraryServiceASMX\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\LibraryServiceASMX\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\LibraryServiceWCF\LibraryService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\LibraryServiceWCF\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\LibraryServiceWCF\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\LibraryServiceWCF\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
